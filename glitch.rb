@@ -1,4 +1,4 @@
-require_relative "PNGlitch/pnglitch"
+require "pnglitch"
 
 LETTERS_BASE = ((65...91).to_a + (97...123).to_a).map { |c| c.chr }
 
