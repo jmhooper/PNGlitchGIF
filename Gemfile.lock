@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    pnglitch (0.0.2)
+    rmagick (2.15.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  pnglitch
+  rmagick
+
+BUNDLED WITH
+   1.10.6

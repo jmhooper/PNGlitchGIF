@@ -1,4 +1,5 @@
 require "pnglitch"
+require "RMagick"
 
 LETTERS_BASE = ((65...91).to_a + (97...123).to_a).map { |c| c.chr }
 
@@ -37,3 +38,7 @@ LETTERS_BASE.size.times do |i|
 	filename = "%03d" % (i + 52)
 	glitch("input.png", "frames/#{filename}.png", /[#{migrated_letters.join}]/)
 end
+
+animation = Magick::ImageList.new(*Dir["frames/*.png"])
+animation.delay = 4
+animation.write("example.gif")
